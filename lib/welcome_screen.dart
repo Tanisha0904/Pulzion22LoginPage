@@ -1,4 +1,5 @@
 import 'package:flutter/animation.dart';
+import 'package:pulzionloginpage/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:pulzionloginpage/login_page.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -10,38 +11,12 @@ class WelcomeScreen extends StatefulWidget {
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen>
-    with SingleTickerProviderStateMixin {
-  /*
-  AnimationController controller;
-  Animation animation;
-  @override
-  void initState() {
-    super.initState();
-    controller = AnimationController(
-      duration: Duration(seconds: 3),
-      vsync: this,
-    );
-    animation = ColorTween(begin: Colors.blueGrey, end: Colors.white)
-        .animate(controller);
-    controller.forward();
-
-    controller.addListener(() {
-      setState(() {});
-      print(animation.value);
-    });
-    @override
-    void dispose() {
-      controller.dispose();
-      super.dispose();
-    }
-  }*/
-
+class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xFFe0e0e6),
+        backgroundColor: kBackGroundColor,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +26,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
           text: ['PULZION\'22'],
           textStyle: const TextStyle(
             fontSize: 45.0,
-            color: Color(0xFF1b3357),
+            color: kButtonColor,
             fontWeight: FontWeight.w900,
           ),
         ),
@@ -85,21 +60,21 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                                     fontSize: 30.0,
                                   ),
                                 ),
-                                // SizedBox(
-                                //   height: 30.0,
-                                // ),
+                                SizedBox(
+                                  height: 30.0,
+                                ),
 
                                 Text('New here don\'t worry, \n'
                                     'just register yourself and '
                                     'get started.',),
-                                // SizedBox(
-                                //   height: 50.0,
-                                // ),
+                                SizedBox(
+                                  height: 50.0,
+                                ),
 
                               ],
                             ),
                           ),
-                          color: Color(0xFF1B3357),
+                          color: kButtonColor,
                         ),
                       ),
                     ),
@@ -132,12 +107,12 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                                     'Get back to where you left off',
                                 ),
                                 SizedBox(
-                                  height: 50.0,
+                                  height: 2z0.0,
                                 ),
                               ],
                             ),
                           ),
-                          color: Color(0xFF46526D),
+                          color: kButtonColor,
                         ),
                       ),
                     ),

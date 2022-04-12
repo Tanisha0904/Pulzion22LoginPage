@@ -14,7 +14,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFe0e0e6),
+      backgroundColor: kBackGroundColor,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
@@ -85,19 +85,35 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                         ],
                       ),
-                      color: Color(0xFF1B3357),
+                      color: kButtonColor,
                     ),
                   ),
                 ),
               ),
             ),
-            // RoundedButton(
-            //     title: 'Register',
-            //     onPressed: () {
-            //
-            //     },
-            //     colour: Color(0xFF1B3357),
-            // ),
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: 16.0),
+          child: Material(
+            elevation: 5.0,
+            color: kButtonColor,
+            borderRadius: BorderRadius.circular(30.0),
+            child: MaterialButton(
+              onPressed: (){
+
+
+              },
+              minWidth: 200.0,
+              height: 42.0,
+              child: Text(
+                'Register',
+                style: TextStyle(
+                  color: kBackGroundColor,
+                ),
+              ),
+            ),
+          ),
+        ),
+
           ],
         ),
       ),
