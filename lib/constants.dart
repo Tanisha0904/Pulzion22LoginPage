@@ -6,6 +6,7 @@ const  kTextFieldDecoration = InputDecoration(
   hintText: 'Type here',
   contentPadding:
   EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+  // EdgeInsets.all(25),
   border: OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(32.0)),
   ),
@@ -21,3 +22,7 @@ const  kTextFieldDecoration = InputDecoration(
   ),
 );
 const List<int> division = [1,2,3,4,5,6,7,8,9,10,11];
+
+const SizedBox kspaceBetweenTextField = SizedBox(
+  height: 20.0,
+);

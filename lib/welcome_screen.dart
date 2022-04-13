@@ -21,15 +21,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-          TypewriterAnimatedTextKit(
-          speed: Duration(milliseconds: 300),
-          text: ['PULZION\'22'],
-          textStyle: const TextStyle(
-            fontSize: 45.0,
-            color: kButtonColor,
-            fontWeight: FontWeight.w900,
-          ),
-        ),
+              TypewriterAnimatedTextKit(
+                speed: Duration(milliseconds: 300),
+                text: ['PULZION\'22'],
+                textStyle: const TextStyle(
+                  fontSize: 45.0,
+                  color: kButtonColor,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
 
               SizedBox(
                 height: 70.0,
@@ -107,7 +107,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                     'Get back to where you left off',
                                 ),
                                 SizedBox(
-                                  height: 2z0.0,
+                                  height: 20.0,
                                 ),
                               ],
                             ),

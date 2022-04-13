@@ -15,8 +15,9 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kBackGroundColor,
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
+      body: Container(
+        // padding: EdgeInsets.symmetric(horizontal: 24.0),
+        padding: EdgeInsets.only(left: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -51,17 +52,20 @@ class _RegisterPageState extends State<RegisterPage> {
                               //Do something with the user input.
                             },
                             decoration:
-                                kTextFieldDecoration.copyWith(hintText: 'Name'),
+                            kTextFieldDecoration.copyWith(hintText: 'Name'),
                           ),
                           SizedBox(
-                            height: 8.0,
+                            height: 20.0,
                           ),
                           TextField(
                             onChanged: (value) {
                               //Do something with the user input.
                             },
                             decoration:
-                                kTextFieldDecoration.copyWith(hintText: 'Email'),
+                            kTextFieldDecoration.copyWith(hintText: 'Email'),
+                          ),
+                          SizedBox(
+                            height: 20.0,
                           ),
                           TextField(
                             onChanged: (value) {
@@ -71,7 +75,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 hintText: 'Password'),
                           ),
                           SizedBox(
-                            height: 8.0,
+                            height: 20.0,
                           ),
                           TextField(
                             onChanged: (value) {
@@ -80,8 +84,32 @@ class _RegisterPageState extends State<RegisterPage> {
                             decoration: kTextFieldDecoration.copyWith(
                                 hintText: 'Institute'),
                           ),
-                          SizedBox(
-                            height: 8.0,
+
+                          // SizedBox(
+                          //   height: 8.0,
+                          // ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 16.0),
+                            child: Material(
+                              elevation: 5.0,
+                              // color: kButtonColor,
+                              color: Color(0xff5a7291),
+                              borderRadius: BorderRadius.circular(30.0),
+                              child: MaterialButton(
+                                onPressed: (){
+
+
+                                },
+                                minWidth: 200.0,
+                                height: 42.0,
+                                child: Text(
+                                  'Register',
+                                  style: TextStyle(
+                                    color: kBackGroundColor,
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -91,28 +119,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
               ),
             ),
-        Padding(
-          padding: EdgeInsets.symmetric(vertical: 16.0),
-          child: Material(
-            elevation: 5.0,
-            color: kButtonColor,
-            borderRadius: BorderRadius.circular(30.0),
-            child: MaterialButton(
-              onPressed: (){
 
-
-              },
-              minWidth: 200.0,
-              height: 42.0,
-              child: Text(
-                'Register',
-                style: TextStyle(
-                  color: kBackGroundColor,
-                ),
-              ),
-            ),
-          ),
-        ),
 
           ],
         ),
